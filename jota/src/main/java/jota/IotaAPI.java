@@ -87,7 +87,7 @@ public class IotaAPI extends IotaAPICore {
 
 			allAddresses.add(newAddress);
 			if (response.getHashes().length == 0) {
-				newAddressIndex = i;
+				newAddressIndex = i+1;
 				break;
 			}
 		}

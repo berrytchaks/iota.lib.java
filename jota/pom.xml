@@ -47,5 +47,10 @@
             <artifactId>jadler-all</artifactId>
             <scope>test</scope>
         </dependency>
+		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcprov-jdk14 </artifactId>
+		    <version>1.51</version>
+		</dependency>
     </dependencies>
 </project>
