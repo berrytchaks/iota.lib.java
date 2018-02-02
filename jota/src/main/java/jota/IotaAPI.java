@@ -74,7 +74,7 @@ public class IotaAPI extends IotaAPICore {
 			}
 			GetNewAddressResponse newAddressResponse = GetNewAddressResponse.create(allAddresses,
 					stopWatch.getElapsedTimeMili());
-			newAddressResponse.setIndex(newAddressIndex);
+			newAddressResponse.setIndex(newAddressIndex+1);
 			return newAddressResponse;
 		}
 
@@ -87,7 +87,7 @@ public class IotaAPI extends IotaAPICore {
 
 			allAddresses.add(newAddress);
 			if (response.getHashes().length == 0) {
-				newAddressIndex = i+1;
+				newAddressIndex = i;
 				break;
 			}
 		}
@@ -100,7 +100,7 @@ public class IotaAPI extends IotaAPICore {
 		}
 		GetNewAddressResponse newAddressResponse = GetNewAddressResponse.create(allAddresses,
 				stopWatch.getElapsedTimeMili());
-		newAddressResponse.setIndex(newAddressIndex);
+		newAddressResponse.setIndex(newAddressIndex+1);
 		return newAddressResponse;
 	}
 
