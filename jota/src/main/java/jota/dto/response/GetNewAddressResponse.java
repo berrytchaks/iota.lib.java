@@ -8,6 +8,7 @@ import java.util.List;
 public class GetNewAddressResponse extends AbstractResponse {
 
     private List<String> addresses;
+    private int index;
 
     /**
      * Initializes a new instance of the GetNewAddressResponse class.
@@ -27,4 +28,13 @@ public class GetNewAddressResponse extends AbstractResponse {
     public List<String> getAddresses() {
         return addresses;
     }
+
+	public int getIndex() {
+		return index;
+	}
+
+	public void setIndex(int index) {
+		this.index = index;
+	}
+    
 }
